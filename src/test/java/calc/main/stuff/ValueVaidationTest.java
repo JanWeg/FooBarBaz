@@ -38,7 +38,7 @@ public class ValueVaidationTest {
     }
 
     @Test
-    public void shouldReturnMultipleErrorsWhennMutliplePassedIn() {
+    public void shouldReturnMutipleErrorsWhennMutliplePassedIn() {
 
         String preparedValues[] = {"1.333", "3.4444", "4.333", "1.333"};
 
