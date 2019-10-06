@@ -16,7 +16,7 @@ public class ValueValidation {
                 continue;
             }
             if (bigDecimalVal.scale() > 2 ) {
-                errors.add(String.format("The value %s has to many places after the dot.", value));
+                errors.add(String.format("The value %s has to many digits after the dot.", value));
             }
         }
         return errors;

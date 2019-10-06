@@ -62,4 +62,15 @@ public class ValueVaidationTest {
         assertEquals(expected_outcome, actual_res.get(0));
 
     }
+
+
+    @Test
+    public void acceptWhenEValueIsGiven() {
+        String preparedInputValue = "1E2";
+        String expected_outcome = String.format("The value %s passed in was not a valid number.", preparedInputValue);
+
+        List<String> actual_res = validation.getErrors(preparedInputValue);
+
+        assertEquals(0, actual_res.size());
+    }
 }
